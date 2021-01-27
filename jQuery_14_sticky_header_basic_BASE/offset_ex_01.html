@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      margin-left: 10px;
+    }
+  </style>
+  <script src="./js/vendor/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+
+  <p>Hello</p>
+  <p>2nd Paragraph</p>
+
+  <script>
+    var p = $('p:last');
+    var offset = p.offset();  //무조건 화면을 기준의 상단과 좌의 거리를 가져옴
+    // A.position(); //가까운 부모중에 기본 값이 아닌 요소를 기준으로 좌,우측 거리
+    p.html('left: ' + offset.left + ', top: ' + offset.top);
+  </script>
+
+
+</body>
+
+</html>

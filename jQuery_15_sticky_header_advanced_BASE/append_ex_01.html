@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  p { background:yellow; }
+</style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  <p>I would like to say: </p>
+<script>
+  $('p').append('<strong>Hello</strong>');
+</script>
+ 
+</body>
+</html>
+
+<!-- 결과 : I would like to say: Hello//  -->
+<!-- A.append('b'); 는 무조건 A의 뒤에 b를 추가 하거나, 없는 거면 생성해 준다.  -->
+<!-- A.appendTo('b'); 는 무조건 b의 뒤에 A를 추가 하거나, 없는 거면 생성해 준다.  -->
+<!-- A.prepend('b'); 는 무조건 A의 앞에 b를 추가 하거나, 없는 거면 생성해 준다.  -->
+<!-- A.prependTo('b'); 는 무조건 b의 앞에 A를 추가 하거나, 없는 거면 생성해 준다.  -->
+
+
